@@ -1,0 +1,237 @@
+:root {
+  --color-black: #00162c;
+  --color-brand: #668bb8;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.image {
+  --img-width: min(calc(100vh * (2 / 3)), calc(100vw / 2));
+  width: var(--img-width);
+  height: 100vh;
+  background-image: url("images/giants-washbowl-crop.jpg");
+  background-size: cover;
+  background-position: top right;
+}
+
+input,
+label {
+  display: block;
+  margin-right: 3rem;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid var(--color-black);
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: 2px solid var(--color-brand);
+  border: 1px solid var(--color-brand);
+}
+
+label {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+section {
+  padding: 2rem;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 500px;
+  /* border: 2px solid red; */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  background-color: #faf9fb;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px #dddddd;
+}
+
+.form-container > p {
+  margin-bottom: 1rem;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  background: #668bb8;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #45698b;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -2px;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+}
+
+a:hover {
+  text-decoration: underline;
+}
