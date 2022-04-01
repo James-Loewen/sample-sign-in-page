@@ -127,6 +127,23 @@ body {
   background-position: top right;
 }
 
+.logo {
+  margin-top: 4rem;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 input,
 label {
   display: block;
